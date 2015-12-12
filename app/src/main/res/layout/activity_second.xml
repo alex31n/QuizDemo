@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:text="Guess the Logo"/>
+
+    <ImageView
+        android:id="@+id/im_pic"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/facebook"
+        android:scaleType="centerInside"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_question"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/layout_textbox"
+        android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"
+        android:orientation="horizontal" android:layout_below="@+id/im_pic" android:gravity="center">
+
+        <TextView android:id="@+id/tv_1" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_2" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_3" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_4" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_5" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_6" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_7" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+        <TextView android:id="@+id/tv_8" android:layout_width="30dp" android:layout_height="30dp" android:padding="@dimen/quiz_button_margin"
+            android:background="@color/colorPrimary" android:text="" android:textAllCaps="true" android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:gravity="center"
+            android:clickable="true" android:onClick="onTextBoxClick"/>
+
+    </LinearLayout>
+
+
+    <Button android:id="@+id/btn_clear" android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite" android:layout_margin="@dimen/quiz_button_margin" android:layout_below="@+id/layout_textbox" android:layout_marginTop="10dp"
+        android:text="Clear" android:textAllCaps="true" android:background="@color/colorAccent" android:textAppearance="?android:textAppearanceMedium" android:layout_centerHorizontal="true"
+        android:onClick="onClearButtonClick" android:visibility="gone"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center" android:layout_marginBottom="@dimen/quiz_button_margin">
+
+            <Button android:id="@+id/btn1"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="E" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn2"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="t" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn3"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="f" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn4"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="U" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn5"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="o" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn6"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="a" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+
+            <ImageButton
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorHilpIcon" android:src="@drawable/help_icon" android:scaleType="centerInside" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onHelpButtonClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="center" android:layout_marginBottom="@dimen/quiz_button_margin">
+
+            <Button android:id="@+id/btn7"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="R" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn8"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="o" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn9"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="b" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn10"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="I" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn11"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="k" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+            <Button android:id="@+id/btn12"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="X" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+
+            <Button android:id="@+id/btn13"
+                android:layout_width="40dp" android:layout_height="40dp" android:padding="5dp"
+                android:background="@color/colorPrimary" android:text="C" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onQuizButtonClick"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal"
+            android:gravity="right" android:layout_marginTop="@dimen/quiz_button_margin">
+
+            <Button
+                android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:background="@color/colorAccent" android:text="Next" android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/colorWhite"
+                android:layout_margin="@dimen/quiz_button_margin" android:onClick="onNextButtonClick"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

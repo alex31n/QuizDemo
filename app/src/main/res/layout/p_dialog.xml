@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:text="Congratulation"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textAllCaps="true"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="You solved this puzzle."
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_dialog_answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_light"
+            android:text="Cruise"
+            android:gravity="center"
+            android:textAllCaps="true"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40sp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWhite"/>
+
+</RelativeLayout>
